@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+        function fact(){
+            var f=1;
+            var num = document.getElementById("myid").value;
+            for(i=1;i<=num;i++){
+                f=f*i;
+            }
+            alert("factorial of "+num+" is = "+f);
+        }
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <form>
+        <input type="number" id="myid"/>
+        <input type="button" value = "Factorial" onclick="fact()"/>
+    </form>
     
 </body>
 </html>
