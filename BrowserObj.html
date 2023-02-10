@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        function msg(){
+            alert("Hello, Alert Box!");
+        }
+        function msg1(){
+            var v = confirm("Are You Sure?");
+            if(v==true){
+                alert("ok");
+            }
+            else alert("cancel");
+        }
+        function msg2() {
+            var v = prompt("Who are you?");
+            alert("I am "+v)
+            
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Message" onclick="msg()">
+    <input type="button" value="Message_1" onclick="msg1()">
+    <input type="button" value="Message_2" onclick="msg2()">
+    
+</body>
+</html>
